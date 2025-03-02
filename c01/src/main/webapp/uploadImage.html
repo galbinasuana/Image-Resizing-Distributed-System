@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>BMP Image Upload with Custom Zoom Level</title>
+</head>
+
+<body>
+	<H1 align="CENTER">Upload BMP File Image with Custom Zoom Level</H1>
+
+	<FORM action="/c01/upload-image" method="post" enctype="multipart/form-data">
+	  <LABEL for="fileToUpload">Choose BMP file to upload:</LABEL> 
+	  <INPUT type="file" id="fileToUpload" name="fileToUpload" accept=".bmp"/><BR/>
+	  <LABEL for="zoomLevel">Enter zoom level in percentage (e.g., 150 for 150%):</LABEL>
+	  <INPUT type="text" id="zoomLevel" name="zoomLevel" /><BR/>
+	  <HR/>
+	  <CENTER>
+	    <INPUT type="submit" value="Upload Image"/>
+	  </CENTER>
+	</FORM>
+</body>
+</html>
